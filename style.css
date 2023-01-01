@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Quicksand", "Poppins";
+}
+
+/* Header */
+header {
+  width: 100%;
+  position: sticky;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+  z-index: 100000;
+  box-shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.2);
+  top: 0px;
+  background-color: white;
+}
+/* Penutup Header */
+
+/* Nav */
+nav {
+  display: flex;
+  width: 1500px;
+  justify-content: space-around;
+  height: 60px;
+  align-items: center;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100000;
+  /* border: 1px solid black; */
+}
+
+nav .logo-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .logo-name img {
+  width: 100px;
+}
+
+nav .logo-name h1 {
+  color: black;
+  margin-left: 15px;
+  font-size: 18pt;
+  transition: all 0.3s ease 0s;
+}
+
+nav .logo-name h1:hover {
+  color: #2b4a9d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  width: 35%;
+  padding: 10px;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out 0s;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* border: 1px solid black; */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.8em;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  border-bottom: 3px solid #2b4a9d;
+  color: #2b4a9d;
+}
+
+nav ul li .drpdwn {
+  display: flex;
+  flex-direction: column;
+}
+nav ul li .drpdwn li:hover {
+  background-color: none;
+}
+
+/* Penutup Nav */
+
+/* Humburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toggle input {
+  position: absolute;
+  width: 45px;
+  height: 30px;
+  opacity: 0;
+  left: -8px;
+  top: -5px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+/* Humburger menu animation */
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+  transition: 0.3s ease;
+}
+
+.menu-toggle span:last-child {
+  transform-origin: 0 100%;
+  transition: 0.3s ease;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+  background-color: black;
+}
+
+.menu-toggle input:checked ~ span:last-child {
+  transform: rotate(-45deg) translate(-1px, 0);
+  background-color: black;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+  background-color: white;
+}
+
+/* Penutup Humburger Menu */
+
+.dropdown {
+  display: inline-block;
+  transition: all 0.3s ease 0s;
+}
+
+.dropdown:hover .isi-dropdown {
+  display: block;
+}
+
+.isi-dropdown a:hover {
+  color: white !important;
+}
+
+.isi-dropdown {
+  position: absolute;
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  color: black;
+  margin-top: 10px;
+}
+.isi-dropdown a {
+  padding: 10px;
+  color: #3c3c3c !important;
+  transition: all 0.3s ease 0s;
+}
+.isi-dropdown a:hover {
+  color: #232332 !important;
+  /* background-color: rgb(189, 183, 183) !important; */
+}
+
+.isi-dropdown li {
+  padding: 10px;
+}
+
+/*Slide Show*/
+
+#bagian_slide {
+  background-color: #221affad;
+  width: 100%;
+}
+
+.wrapper-slideshow {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 650px;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+.section_content .content_kiri {
+  color: #f9f9f9;
+}
+
+.section_content .content_kiri a button {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: all 0.3s ease 0s;
+  color: #2b4a9d;
+}
+
+.section_content .content_kiri a button:hover {
+  background-color: #2b4a9d;
+  color: white;
+}
+
+.section_content .content_kanan img {
+  width: 320px;
+}
+/*Penutup Slideshow*/
+
+/* Tentang */
+#tentang {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 40px;
+}
+
+#tentang h1 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+#tentang .tentang_dicker {
+  width: 1500px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tentang_dicker_kiri {
+  text-align: justify;
+  width: 50%;
+}
+
+.tentang_dicker_kiri button {
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #2b4a9d;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out 0s;
+  margin-bottom: 30px;
+}
+
+.tentang_dicker_kiri button a {
+  text-decoration: none;
+  color: white;
+}
+
+.tentang_dicker_kiri button:hover {
+  background-color: white;
+}
+
+.tentang_dicker_kiri button:hover a {
+  color: black;
+}
+
+.tentang_dicker_kanan {
+  width: 50%;
+}
+
+.tentang_dicker_kanan img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Tentang */
+
+/* Layanan Kesehatan */
+#layanan_kesehatan {
+  width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-radius: 10px;
+}
+#layanan_kesehatan .judul_layanan_kesehatan {
+  text-align: center;
+}
+
+#layanan_kesehatan .judul_layanan_kesehatan h1 {
+  font-weight: bold;
+}
+
+#layanan_kesehatan .judul_layanan_kesehatan hr {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#layanan_kesehatan .layanan {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#layanan_kesehatan .layanan .box_layanan {
+  border: 1px solid rgba(110, 109, 109, 0.408);
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out 0s;
+}
+
+#layanan_kesehatan .layanan .box_layanan:hover {
+  transform: translateY(-20px);
+  background-color: #2b4a9d;
+}
+
+#layanan_kesehatan .layanan .box_layanan:hover img {
+  outline-offset: white;
+}
+#layanan_kesehatan .layanan .box_layanan:hover h4 {
+  color: white;
+}
+
+#layanan_kesehatan .layanan .box_layanan h4 {
+  margin-top: 20px;
+}
+
+#layanan_kesehatan .layanan .box_layanan img {
+  width: 100px;
+  height: 100px;
+}
+
+/* Layanan Kesehatan */
+
+/*Dokter*/
+#dokter {
+  background-color: #f9f9f9;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  transition: all 0.3s ease 0s;
+}
+
+#dokter a {
+  text-decoration: none;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  font-size: 14pt;
+}
+#dokter a:hover {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+
+.judul-dokter {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+.container-card-dotker {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.profile-card-dokter {
+  margin-top: 30px;
+  width: 325px;
+  text-align: center;
+  border-radius: 10px;
+  margin-left: 35px;
+  overflow: hidden;
+  transition: all 0.1s ease 0s;
+  cursor: pointer;
+  border: 3px solid rgba(158, 188, 168, 0.8);
+  background-color: white;
+}
+
+.profile-card-dokter:hover {
+  scale: 1.1;
+}
+
+.card-header-dokter {
+  padding: 60px 40px;
+}
+
+.pic-dokter {
+  display: inline-block;
+  padding: 8px;
+  background: linear-gradient(130deg, #74b9ff, #e66767);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animated-gradient 2s linear infinite;
+}
+
+.pic-dokter img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name-dokter {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.desc-dokter {
+  font-size: 18px;
+}
+
+.sm-dokter {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.sm-dokter a {
+  width: 56px;
+  font-size: 22px;
+  transition: 0.3s linear;
+}
+
+.sm-dokter a:hover {
+  color: #9ebca8;
+}
+
+/*Dokter*/
+
+/* Footer */
+footer {
+  padding: 50px;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+footer .wrapper-footer .bagian1_footer {
+  padding: 10px;
+}
+footer .wrapper-footer .bagian1_footer td {
+  padding: 10px;
+}
+footer .wrapper-footer .bagian2_footer {
+  padding: 10px;
+}
+
+footer .wrapper-footer .bagian2_footer .alamat {
+  margin-top: 30px;
+}
+
+footer .wrapper-footer .bagian3_footer {
+  padding: 10px;
+}
+footer .wrapper-footer .bagian4_footer {
+  padding: 10px;
+}
+footer .wrapper-footer .bagian4_footer .follow-us {
+  display: flex;
+}
+footer .wrapper-footer .bagian4_footer .follow-us a {
+  text-decoration: none;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .wrapper-footer .bagian4_footer .follow-us a blockquote {
+  margin-top: 10px;
+}
+
+footer .wrapper-footer .bagian4_footer .download_app {
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer .wrapper-footer .bagian4_footer .playstore {
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .wrapper-footer .bagian4_footer .playstore a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+footer .wrapper-footer .bagian4_footer .playstore a blockquote {
+  margin-top: 18px;
+}
+footer .wrapper-footer .bagian4_footer .appstore {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+footer .wrapper-footer .bagian4_footer .appstore a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+footer .wrapper-footer .bagian4_footer .appstore a blockquote {
+  margin-top: 18px;
+}
+
+footer p {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Penutup Footer */
+
+/*Animasi Pop Up*/
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*Animasi Pop Up*/
