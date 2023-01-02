@@ -34,7 +34,6 @@ nav {
   margin-left: auto;
   margin-right: auto;
   z-index: 100000;
-  /* border: 1px solid black; */
 }
 
 nav .logo-name {
@@ -63,7 +62,7 @@ nav .logo-name h1:hover {
 nav ul {
   display: flex;
   list-style-type: none;
-  width: 35%;
+  width: 40%;
   padding: 10px;
   justify-content: space-between;
   transition: all 0.3s ease-in-out 0s;
@@ -151,9 +150,18 @@ nav ul li .drpdwn li:hover {
 }
 /*Penutup Humberger*/
 
+/* dropdown */
+ul .home {
+  width: 100px;
+  text-align: center;
+  /* border: 1px solid black; */
+}
 .dropdown {
   display: inline-block;
   transition: all 0.3s ease 0s;
+  width: 100px;
+  text-align: center;
+  /* border: 1px solid black; */
 }
 
 .dropdown:hover .isi-dropdown {
@@ -173,6 +181,7 @@ nav ul li .drpdwn li:hover {
   border-radius: 8px;
   color: black;
   margin-top: 10px;
+  text-align: left;
 }
 .isi-dropdown a {
   padding: 10px;
@@ -694,17 +703,26 @@ footer p {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    background-color: #2b4a9d;
+    background-color: white;
     transition: all 0.5s;
   }
 
   nav ul.slide {
     transform: translateX(0);
-    border-radius: 10px;
+    border-radius: 0px 0px 0px 10px;
   }
 
   .menu-toggle {
     display: flex;
+  }
+
+  .isi-dropdown {
+    /* display: block; */
+    transform: translateX(0);
+    margin-right: 100px;
+    margin-top: -80px;
+    /* display: flex; */
+    height: auto;
   }
 
   #bagian_slide {
