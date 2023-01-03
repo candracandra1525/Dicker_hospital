@@ -3,6 +3,8 @@ const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const password2 = document.getElementById("confirmpassword");
+const fullname = document.getElementById("fullname");
+const phone = document.getElementById("phone");
 
 function showError(input, message) {
   const formControl = input.parentElement;
@@ -14,8 +16,9 @@ function showError(input, message) {
 function showSuccess(input) {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
-  url = "../index_sesudahlogin.html";
-  window.location.href = url;
+  // if (checkRequired(fullname) == false && checkRequired(username) == false && checkRequired(email) == false && checkRequired(phone) == false && checkRequired(password) == false && checkRequired(password2) == false) {
+  window.location.href = "../index_sesudahLogin.html";
+  // }
 }
 
 function checkEmail(input) {
