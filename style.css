@@ -280,7 +280,7 @@ ul .home {
 }
 
 .container-tentang h1 {
-  margin-top: 5%;
+  margin-top: 100px;
 }
 
 .tentang_dicker {
@@ -298,10 +298,6 @@ ul .home {
   width: 5000px;
 }
 
-.container-tentang {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
 /* Tentang */
 
 /* Layanan Kesehatan */
@@ -330,7 +326,7 @@ ul .home {
   margin-bottom: 30px;
 }
 
-.layanan {
+.layanan_kesehatan {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -338,7 +334,7 @@ ul .home {
   margin-right: 3%;
 }
 
-.layanan .box_layanan {
+.layanan_kesehatan .box_layanan {
   border: 1px solid rgba(110, 109, 109, 0.408);
   border-radius: 10px;
   width: 300px;
@@ -354,14 +350,14 @@ ul .home {
   transition: all 0.3s ease-out 0s;
 }
 
-.layanan a {
+.layanan_kesehatan a {
   text-decoration: none;
 }
 .box_layanan h4 {
   color: black;
 }
 
-.layanan .box_layanan:hover {
+.layanan_kesehatan .box_layanan:hover {
   transform: translateY(-20px);
   background-color: #2b4a9d;
 }
@@ -412,7 +408,7 @@ ul .home {
 .judul-dokter {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 70px;
   font-weight: bold;
 }
 
@@ -615,7 +611,7 @@ footer p {
     width: 50%;
   }
 
-  .layanan {
+  .layanan_kesehatan {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -652,7 +648,7 @@ footer p {
     width: 400px;
   }
 
-  .layanan {
+  .layanan_kesehatan {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -717,11 +713,9 @@ footer p {
   }
 
   .isi-dropdown {
-    /* display: block; */
     transform: translateX(0);
     margin-right: 100px;
     margin-top: -80px;
-    /* display: flex; */
     height: auto;
   }
 
@@ -729,12 +723,24 @@ footer p {
     margin-top: 80px;
   }
 
+  .container-tentang {
+    border: 1px solid white;
+  }
+
   .tentang_dicker {
     margin-left: 7%;
     margin-right: 7%;
   }
 
-  .layanan {
+  .container-kesehatan {
+    padding: 10px;
+  }
+
+  .container-kesehatan h1 {
+    margin-top: 80px;
+  }
+
+  .layanan_kesehatan {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 0;
