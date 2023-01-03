@@ -14,6 +14,8 @@ function showError(input, message) {
 function showSuccess(input) {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
+  url = "../index_sesudahlogin.html";
+  window.location.href = url;
 }
 
 function checkEmail(input) {
@@ -26,7 +28,7 @@ function checkEmail(input) {
 }
 
 function checkRequired(inputArr) {
-  inputArr.forEach(function(input) {
+  inputArr.forEach(function (input) {
     if (input.value === "") {
       showError(input, `${getFieldName(input)} is required`);
     } else {
@@ -43,15 +45,9 @@ function checkPasswordsMatch(password1, password2) {
 
 function checkLength(input, min, max) {
   if (input.value.length <= min) {
-    showError(
-      input,
-      `${getFieldName(input)} must be more than ${min} characters`
-    );
+    showError(input, `${getFieldName(input)} must be more than ${min} characters`);
   } else if (input.value.length >= max) {
-    showError(
-      input,
-      `${getFieldName(input)} must be less than ${max} characters`
-    );
+    showError(input, `${getFieldName(input)} must be less than ${max} characters`);
   } else {
     showSuccess(input);
   }
@@ -61,14 +57,14 @@ function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   checkRequired([fullname, username, email, phone, password, password2]);
   checkLength(fullname, 2, 50);
-  checkLength(username, 3, 15);
+  checkLength(username, 3, 50);
   checkLength(password, 6, 25);
-  checkLength(phone, 11 , 12);
+  checkLength(phone, 10, 13);
   checkEmail(email);
   if (password2.value !== "") {
     checkPasswordsMatch(password, password2);
