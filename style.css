@@ -326,7 +326,7 @@ ul .home {
   margin-bottom: 30px;
 }
 
-.layanan_kesehatan {
+.layanan {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -334,7 +334,7 @@ ul .home {
   margin-right: 3%;
 }
 
-.layanan_kesehatan .box_layanan {
+.layanan .box_layanan {
   border: 1px solid rgba(110, 109, 109, 0.408);
   border-radius: 10px;
   width: 300px;
@@ -350,14 +350,14 @@ ul .home {
   transition: all 0.3s ease-out 0s;
 }
 
-.layanan_kesehatan a {
+.layanan a {
   text-decoration: none;
 }
 .box_layanan h4 {
   color: black;
 }
 
-.layanan_kesehatan .box_layanan:hover {
+.layanan .box_layanan:hover {
   transform: translateY(-20px);
   background-color: #2b4a9d;
 }
