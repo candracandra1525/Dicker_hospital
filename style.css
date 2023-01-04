@@ -312,6 +312,7 @@ ul .home {
   max-width: 1500px;
   margin: 0 auto;
   border-radius: 10px;
+  /* border: 1px solid black; */
 }
 
 .container-kesehatan h1 {
@@ -327,6 +328,7 @@ ul .home {
 }
 
 .layanan {
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
@@ -337,8 +339,8 @@ ul .home {
 .layanan .box_layanan {
   border: 1px solid rgba(110, 109, 109, 0.408);
   border-radius: 10px;
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   margin: 20px auto;
   text-align: center;
   display: flex;
@@ -611,14 +613,14 @@ footer p {
     width: 50%;
   }
 
-  .layanan_kesehatan {
+  .layanan {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
 
   .section_content {
-    height: 400px;
+    height: 600px;
   }
 
   .section_content .content_kanan {
@@ -648,7 +650,7 @@ footer p {
     width: 400px;
   }
 
-  .layanan_kesehatan {
+  .layanan {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -740,7 +742,7 @@ footer p {
     margin-top: 80px;
   }
 
-  .layanan_kesehatan {
+  .layanan {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 0;

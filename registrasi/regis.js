@@ -16,9 +16,6 @@ function showError(input, message) {
 function showSuccess(input) {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
-  // if (checkRequired(fullname) == false && checkRequired(username) == false && checkRequired(email) == false && checkRequired(phone) == false && checkRequired(password) == false && checkRequired(password2) == false) {
-  window.location.href = "../index_sesudahLogin.html";
-  // }
 }
 
 function checkEmail(input) {
@@ -64,12 +61,30 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   checkRequired([fullname, username, email, phone, password, password2]);
-  checkLength(fullname, 2, 50);
-  checkLength(username, 3, 50);
-  checkLength(password, 6, 25);
-  checkLength(phone, 10, 13);
-  checkEmail(email);
+
   if (password2.value !== "") {
     checkPasswordsMatch(password, password2);
+  }
+
+  // if (fullname.value !== "" && checkLength(fullname, 2, 50)) {
+  //   if (username.value !== "" && checkLength(username, 3, 50)) {
+  //     if (email.value !== "" && checkEmail(email)) {
+  //       if (phone.value !== "" && checkLength(phone, 10, 13)) {
+  //         if (password.value !== "" && password2.value !== "" && checkLength(password, 6, 25)) {
+  //           if (password.value === password2.value) {
+  //             window.location.href = "../index_sesudahLogin.html";
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  if (fullname.value !== "" && username.value !== "" && email.value !== "" && phone.value !== "") {
+    if (password.value !== "" && password2.value !== "") {
+      if (password.value === password2.value) {
+        window.location.href = "../index_sesudahLogin.html";
+      }
+    }
   }
 });

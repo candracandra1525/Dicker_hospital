@@ -1,8 +1,6 @@
 const form = document.getElementById("form");
 const username = document.getElementById("username");
-const email = document.getElementById("email");
 const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
 
 function showError(input, message) {
   const formControl = input.parentElement;
@@ -14,8 +12,6 @@ function showError(input, message) {
 function showSuccess(input) {
   const formControl = input.parentElement;
   formControl.className = "form-control success";
-  url = "../index_sesudahlogin.html";
-  window.location.href = url;
 }
 
 function checkEmail(input) {
@@ -37,12 +33,6 @@ function checkRequired(inputArr) {
   });
 }
 
-function checkPasswordsMatch(password1, password2) {
-  if (password1.value !== password2.value) {
-    showError(password2, "Password do not match");
-  }
-}
-
 function checkLength(input, min, max) {
   if (input.value.length <= min) {
     showError(input, `${getFieldName(input)} can't be null, must be more than ${min} characters`);
@@ -52,24 +42,6 @@ function checkLength(input, min, max) {
     showSuccess(input);
   }
 }
-
-// function checknull(input) {
-//     if(input.username == null) {
-//         showError(
-//             input,
-//             `${getFieldName(input)} username/email can't be null`
-//         );
-//     }
-//     else if (input.password = null) {
-//         showError(
-//             input,
-//             `${getFieldName(input)} password can't be null`
-//         );
-//     }
-//     else {
-//         showSuccess(input);
-//     }
-// }
 
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -81,9 +53,10 @@ form.addEventListener("submit", function (e) {
   checkRequired([username, password]);
   checkLength(username, 6, 25);
   checkLength(password, 6, 25);
-  checkPasswordsMatch(password1);
-  //   checkEmail(email);
-  //   if (password2.value !== "") {
-  //     checkPasswordsMatch(password, password2);
-  //   }
+
+  if (username.value !== "") {
+    if (password.value !== "") {
+      window.location.href = "../index_sesudahLogin.html";
+    }
+  }
 });
