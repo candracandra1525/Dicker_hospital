@@ -16,6 +16,56 @@
     <!-- Ini Link Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <!-- Ini Link Icon Bootstrap -->
+    <style>
+      .judulrumahsinggah {
+        margin-top: 80px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("https://img.freepik.com/premium-photo/long-hospital-corridor-with-empty-seats_117023-1679.jpg?w=2000");
+      }
+
+      .judulrumahsinggah h1 {
+        text-align: center;
+      }
+      .contentrumahsinggah {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: justify;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+      }
+
+      .contentrumahsinggah p {
+        font-size: 16pt;
+      }
+
+      .gambar {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .gambar img {
+        width: 450px;
+        border-radius: 10px;
+      }
+      .gambar .kanan img {
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .ket {
+        margin: 30px auto;
+      }
+      @media screen and (max-width: 1000px) {
+        .gambar {
+          flex-direction: column;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Bagian Header -->
@@ -51,12 +101,11 @@
               <li><a href="igd.html">IGD</a></li>
               <li><a href="rawatjalan.html">Rawat Jalan</a></li>
               <li><a href="rawatinap.html">Rawat Inap</a></li>
-              <li><a href="rumahduka.html">Rumah Duka</a></li>
               <li><a href="rumahsinggah.html">Rumah Singgah</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="fasilitas/fasilitas.html">Fasilitas</a>
+            <a href="fasilitas.html">Fasilitas</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="tempatibadah.html">Tempat Ibadah</a></li>
               <li><a href="kantin.html">Kantin</a></li>
@@ -99,6 +148,29 @@
     <!-- Penutup Header -->
 
     <!-- Main -->
+    <main>
+      <div class="judulrumahsinggah">
+        <h1>
+          <b
+            >RUMAH SINGGAH
+            <br />
+            DICKER HOSPITAL
+          </b>
+        </h1>
+      </div>
+
+      <div class="contentrumahsinggah">
+        <p>Kami sedikan fasilitas Rumah Singgah bagi pengunjung / keluarga pasien yang berdomisili di luar kota, dengan harga terjangkau.</p>
+        <div class="gambar">
+          <img src="assets/img/foto/rumah_singgah/rumah_singgah.jpg" alt="rumahsinggah" />
+          <div class="kanan">
+            <img src="assets/img/foto/rumah_singgah/rumah_singgah2.jpg" alt="rumahsinggah" />
+            <img src="assets/img/foto/rumah_singgah/rumah_singgah3.jpg" alt="rumahsinggah" />
+          </div>
+        </div>
+        <img src="assets/img/foto/rumah_singgah/keterangan.jpg" alt="rumahsinggah" class="ket" />
+      </div>
+    </main>
     <!-- Main -->
 
     <!-- Footer -->

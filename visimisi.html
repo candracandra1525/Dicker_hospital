@@ -18,16 +18,19 @@
     <!-- Ini Link Icon Bootstrap -->
 
     <style>
-      main h1 {
-        margin-top: 150px;
+      .judulvisimisi {
+        margin-top: 80px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url("https://img.freepik.com/premium-photo/long-hospital-corridor-with-empty-seats_117023-1679.jpg?w=2000");
+      }
+      .judulvisimisi h1 {
         text-align: center;
-        margin-bottom: 30px;
-        padding: 30px 0;
-        width: 100%;
-        background-color: #f9f9f9;
       }
       #visimisi {
-        /* height: 70vh; */
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -51,13 +54,16 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
+        font-size: 19pt;
       }
 
       .content_visi_misi li {
         list-style-type: none;
+        font-size: 16pt;
       }
 
       .content_visi_misi p {
+        font-size: 16pt;
         text-align: justify;
       }
     </style>
@@ -97,12 +103,11 @@
               <li><a href="igd.html">IGD</a></li>
               <li><a href="rawatjalan.html">Rawat Jalan</a></li>
               <li><a href="rawatinap.html">Rawat Inap</a></li>
-              <li><a href="rumahduka.html">Rumah Duka</a></li>
               <li><a href="rumahsinggah.html">Rumah Singgah</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="fasilitas/fasilitas.html">Fasilitas</a>
+            <a href="fasilitas.html">Fasilitas</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="tempatibadah.html">Tempat Ibadah</a></li>
               <li><a href="kantin.html">Kantin</a></li>
@@ -146,13 +151,15 @@
 
     <!-- Main -->
     <main>
-      <h1>
-        <b>
-          VISI MISI
-          <br />
-          DICKER HOSPITAL
-        </b>
-      </h1>
+      <div class="judulvisimisi">
+        <h1>
+          <b>
+            VISI MISI
+            <br />
+            DICKER HOSPITAL
+          </b>
+        </h1>
+      </div>
       <section id="visimisi">
         <div class="content_visi_misi">
           <h3>Visi</h3>

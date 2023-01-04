@@ -18,14 +18,21 @@
         color: black;
       }
       body {
-        height: 100vh;
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
       }
 
-      body img {
+      main img {
         margin-bottom: 100px;
       }
 
@@ -91,7 +98,7 @@
         color: black;
       }
 
-      @media screen and (max-width: 700px) {
+      @media screen and (max-width: 1000px) {
         .error {
           flex-direction: column-reverse;
           margin-bottom: 100px;
@@ -100,21 +107,23 @@
     </style>
   </head>
   <body>
-    <img src="assets/img/icon/DICKER_HOSPITAL_NO_BG.png" alt="hospital" />
-    <div class="error">
-      <div class="kata">
-        <h1>
-          Opss.... <br />
-          Silahkan Login terlebih dahulu 😁
-        </h1>
-      </div>
+    <main>
+      <img src="assets/img/icon/DICKER_HOSPITAL_NO_BG.png" alt="hospital" />
+      <div class="error">
+        <div class="kata">
+          <h1>
+            Opss.... <br />
+            Silahkan Login terlebih dahulu 😁
+          </h1>
+        </div>
 
-      <div class="gambar">
-        <img src="assets/img/foto/hospital_1.png" alt="" />
+        <div class="gambar">
+          <img src="assets/img/foto/hospital_1.png" alt="" />
+        </div>
       </div>
-    </div>
-    <a href="login/login.html" class="lgn"><button class="tombol_login">Yuk Login</button></a>
-    <h2>Jika belum memiliki Akun, silahkan Register</h2>
-    <a href="registrasi/registrasi.html" class="register"><button class="regis">Register Dulu</button></a>
+      <a href="login/login.html" class="lgn"><button class="tombol_login">Yuk Login</button></a>
+      <h2>Jika belum memiliki Akun, silahkan Register</h2>
+      <a href="registrasi/registrasi.html" class="register"><button class="regis">Register Dulu</button></a>
+    </main>
   </body>
 </html>

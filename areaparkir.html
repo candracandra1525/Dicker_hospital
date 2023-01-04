@@ -16,6 +16,67 @@
     <!-- Ini Link Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <!-- Ini Link Icon Bootstrap -->
+    <style>
+      .judulareaparkir {
+        margin-top: 80px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("https://img.freepik.com/premium-photo/long-hospital-corridor-with-empty-seats_117023-1679.jpg?w=2000");
+      }
+
+      .judulareaparkir h1 {
+        padding: 10px;
+        text-align: center;
+        max-width: 100%;
+        background: transparent;
+      }
+      .content_areaparkir {
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      }
+
+      .content_areaparkir .parkir {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .content_areaparkir .gambar {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+      }
+
+      .content_areaparkir .gambar img {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 1200px) {
+        .content_areaparkir .gambar {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .content_areaparkir .gambar {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .content_areaparkir .gambar {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Bagian Header -->
@@ -51,12 +112,11 @@
               <li><a href="igd.html">IGD</a></li>
               <li><a href="rawatjalan.html">Rawat Jalan</a></li>
               <li><a href="rawatinap.html">Rawat Inap</a></li>
-              <li><a href="rumahduka.html">Rumah Duka</a></li>
               <li><a href="rumahsinggah.html">Rumah Singgah</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="fasilitas/fasilitas.html">Fasilitas</a>
+            <a href="fasilitas.html">Fasilitas</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="tempatibadah.html">Tempat Ibadah</a></li>
               <li><a href="kantin.html">Kantin</a></li>
@@ -99,6 +159,30 @@
     <!-- Penutup Header -->
 
     <!-- Main -->
+    <main>
+      <div class="judulareaparkir">
+        <h1>
+          <b
+            >AREA PARKIR
+            <br />
+            DICKER HOSPITAL
+          </b>
+        </h1>
+      </div>
+
+      <div class="content_areaparkir">
+        <div class="peraturan">
+          <img src="assets/img/foto/parkir/parkir.jpg" alt="parkir" class="parkir" />
+        </div>
+        <div class="gambar">
+          <img src="assets/img/foto/parkir/pintu_masuk.jpg" alt="pintu_masuk" />
+          <img src="assets/img/foto/parkir/ruangan_parkir.jpg" alt="ruangan_parkir" />
+          <img src="assets/img/foto/parkir/ruangan_parkir_2.jpg" alt="ruangan_parkir" />
+          <img src="assets/img/foto/parkir/area_parkir_motor.jpg" alt="area_parkir_motor" />
+          <img src="assets/img/foto/parkir/area_parkir_mobil.jpg" alt="area_parkir_mobil" />
+        </div>
+      </div>
+    </main>
     <!-- Main -->
 
     <!-- Footer -->

@@ -16,13 +16,94 @@
     <!-- Ini Link Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <!-- Ini Link Icon Bootstrap -->
+
+    <style>
+      .judul_fasilitas {
+        margin-top: 80px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url("https://img.freepik.com/premium-photo/long-hospital-corridor-with-empty-seats_117023-1679.jpg?w=2000");
+      }
+
+      .judul_fasilitas h1 {
+        text-align: center;
+      }
+      .content_fasilitas {
+        max-width: 1500px;
+        padding: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-bottom: 100px;
+        margin-top: 20px;
+      }
+
+      .content_fasilitas a {
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease 0s;
+      }
+
+      .content_fasilitas a:hover {
+        font-weight: bold;
+      }
+
+      .content_fasilitas .box_fasilitas:hover {
+        scale: 1.05;
+      }
+
+      .box_fasilitas {
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.3s ease 0s;
+      }
+      .box_fasilitas img {
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .box_fasilitas blockquote {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        .content_fasilitas {
+          grid-template-columns: repeat(3, 1fr);
+          /* border: 1px solid red; */
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .content_fasilitas {
+          grid-template-columns: repeat(2, 1fr);
+          /* border: 1px solid red; */
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .content_fasilitas {
+          grid-template-columns: repeat(1, 1fr);
+          /* border: 1px solid red; */
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Bagian Header -->
     <header>
       <nav>
         <div class="logo-name">
-          <a href="#">
+          <a href="index_sesudahlogin.html">
             <img src="assets/img/icon/DICKER_HOSPITAL_NO_BG.png" alt="DICKER" />
           </a>
         </div>
@@ -30,7 +111,7 @@
         <ul>
           <li class="home"><a href="index_sesudahlogin.html">Beranda</a></li>
           <li class="dropdown">
-            <a href="#tentang">Profile</a>
+            <a href="index_sesudahlogin.html#container-tentang">Profile</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="sejarah.html">Sejarah</a></li>
               <li><a href="visimisi.html">Visi dan Misi</a></li>
@@ -38,7 +119,7 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#dokter">Dokter</a>
+            <a href="index_sesudahlogin.html#dokter">Dokter</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="profiledokter.html">Profile Dokter</a></li>
               <li><a href="jadwaldokter.html">Jadwal Dokter</a></li>
@@ -46,17 +127,16 @@
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#layanan_kesehatan">Pelayanan</a>
+            <a href="index_sesudahlogin.html#container_kesehatan">Pelayanan</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="igd.html">IGD</a></li>
               <li><a href="rawatjalan.html">Rawat Jalan</a></li>
               <li><a href="rawatinap.html">Rawat Inap</a></li>
-              <li><a href="rumahduka.html">Rumah Duka</a></li>
               <li><a href="rumahsinggah.html">Rumah Singgah</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="#">Fasilitas</a>
+            <a href="fasilitas.html">Fasilitas</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="tempatibadah.html">Tempat Ibadah</a></li>
               <li><a href="kantin.html">Kantin</a></li>
@@ -78,13 +158,11 @@
               </div>
 
               <div class="py-1">
-                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                <a href="dashboard.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
               </div>
+
               <div class="py-1">
-                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
-              </div>
-              <div class="py-1">
-                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+                <a href="index.html" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
               </div>
             </div>
           </li>
@@ -101,6 +179,43 @@
     <!-- Penutup Header -->
 
     <!-- Main -->
+    <main>
+      <div class="judul_fasilitas">
+        <h1>
+          <b>
+            FASILITAS
+            <br />
+            DICKER HOSPITAL
+          </b>
+        </h1>
+      </div>
+      <div class="content_fasilitas">
+        <div class="box_fasilitas">
+          <a href="tempatibadah/tempatibadah.html">
+            <img src="assets/img/foto/fasilitas/tempatibadah.png" alt="ti" />
+            <blockquote>Tempat Ibadah</blockquote>
+          </a>
+        </div>
+        <div class="box_fasilitas">
+          <a href="kantin.html">
+            <img src="assets/img/foto/fasilitas/kantin.png" alt="kn" />
+            <blockquote>Kantin</blockquote>
+          </a>
+        </div>
+        <div class="box_fasilitas">
+          <a href="atmcenter.html">
+            <img src="assets/img/foto/fasilitas/atm.png" alt="atmc" />
+            <blockquote>ATM Center</blockquote>
+          </a>
+        </div>
+        <div class="box_fasilitas">
+          <a href="areaparkir.html">
+            <img src="assets/img/foto/fasilitas/area parkir.png" alt="ap" />
+            <blockquote>Area Parkir</blockquote>
+          </a>
+        </div>
+      </div>
+    </main>
     <!-- Main -->
 
     <!-- Footer -->

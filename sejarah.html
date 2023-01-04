@@ -18,9 +18,14 @@
     <!-- Ini Link Icon Bootstrap -->
 
     <style>
-      main {
-        /* background: url("assets/img/foto/hospital_1.png");
-        background-repeat: no-repeat; */
+      .judulsejarah {
+        margin-top: 80px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url("https://img.freepik.com/premium-photo/long-hospital-corridor-with-empty-seats_117023-1679.jpg?w=2000");
       }
       #sejarah {
         margin-bottom: 200px;
@@ -43,20 +48,16 @@
       }
 
       h1 {
-        margin-top: 150px;
         text-align: center;
-        background-color: #f9f9f9;
-        width: 100%;
-        padding: 10px;
       }
       .content_sejarah {
-        /* border: 1px solid black; */
         max-width: 1500px;
         padding: 20px;
       }
 
       .content_sejarah p {
         text-align: justify;
+        font-size: 16pt;
         margin-top: 10px;
       }
     </style>
@@ -95,12 +96,11 @@
               <li><a href="igd.html">IGD</a></li>
               <li><a href="rawatjalan.html">Rawat Jalan</a></li>
               <li><a href="rawatinap.html">Rawat Inap</a></li>
-              <li><a href="rumahduka.html">Rumah Duka</a></li>
               <li><a href="rumahsinggah.html">Rumah Singgah</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="fasilitas/fasilitas.html">Fasilitas</a>
+            <a href="fasilitas.html">Fasilitas</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="tempatibadah.html">Tempat Ibadah</a></li>
               <li><a href="kantin.html">Kantin</a></li>
@@ -145,9 +145,11 @@
     <!-- Main -->
 
     <main>
-      <h1>
-        <b>SEJARAH<br />DICKER HOSPITAL</b>
-      </h1>
+      <div class="judulsejarah">
+        <h1>
+          <b>SEJARAH<br />DICKER HOSPITAL</b>
+        </h1>
+      </div>
       <section id="sejarah">
         <div class="content_sejarah">
           <img src="assets/img/foto/hospital_1.png" alt="hospital" />

@@ -16,6 +16,187 @@
     <!-- Ini Link Icon Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
     <!-- Ini Link Icon Bootstrap -->
+    <style>
+      .judul_dashboard {
+        margin-top: 80px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("https://img.freepik.com/premium-photo/long-hospital-corridor-with-empty-seats_117023-1679.jpg?w=2000");
+      }
+
+      .judul_dashboard h1 {
+        text-align: center;
+      }
+
+      input {
+        border: none;
+        color: black;
+        width: 190px;
+      }
+      .dashboard {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .dashboard .content_dashboard {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        text-align: justify;
+        max-width: 1500px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+      }
+
+      .dashboard_kiri button {
+        background-color: #2b4a9d;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        transition: all 0.3s ease 0s;
+        margin-top: 20px;
+        border: none;
+      }
+      .dashboard_kiri button:hover {
+        background-color: red;
+      }
+
+      .dashboard .dashboard_tengah {
+        border-radius: 10px;
+        width: 700px;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+      }
+
+      .dashboard_tengah h2 {
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .name {
+        border: 1px solid black;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: white;
+      }
+
+      .email {
+        border: 1px solid black;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: white;
+      }
+      .pass {
+        background-color: #2b4a9d;
+        transition: all 0.3s ease 0s;
+        color: white;
+        /* border: 1px solid black; */
+        padding: 10px 20px;
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      .pass:hover {
+        background-color: rgb(250, 205, 121);
+        color: black;
+      }
+      .dua {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+      }
+      .savechange {
+        background-color: #2b4a9d;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        width: 200px;
+        padding: 10px 20px;
+        transition: all 0.3s ease 0s;
+        border: none;
+      }
+      .savechange:hover {
+        background-color: lightgreen;
+        color: black;
+      }
+
+      .jk {
+        width: 45%;
+        margin-right: 50px;
+      }
+
+      .jk .jenis_kelamin {
+        background-color: white;
+        border: 1px solid black;
+        padding: 6px 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      .wa {
+        width: 45%;
+      }
+
+      .wa .waphone {
+        background-color: white;
+        border: 1px solid black;
+        padding: 6px 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+
+      .dashboard_kanan {
+        padding: 10px;
+      }
+
+      .dashboard_kanan img {
+        width: 150px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .dashboard_kanan button {
+        background-color: #2b4a9d;
+        color: white;
+        border: 1px solid black;
+        width: 100%;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .dashboard_kanan button:hover {
+        background-color: #1a56db;
+      }
+
+      @media screen and (max-width: 1200px) {
+        .content_dashboard {
+          flex-direction: column;
+        }
+
+        .content_dashboard .dashboard_tengah {
+          width: 100%;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Bagian Header -->
@@ -51,12 +232,11 @@
               <li><a href="igd.html">IGD</a></li>
               <li><a href="rawatjalan.html">Rawat Jalan</a></li>
               <li><a href="rawatinap.html">Rawat Inap</a></li>
-              <li><a href="rumahduka.html">Rumah Duka</a></li>
               <li><a href="rumahsinggah.html">Rumah Singgah</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="fasilitas/fasilitas.html">Fasilitas</a>
+            <a href="fasilitas.html">Fasilitas</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="tempatibadah.html">Tempat Ibadah</a></li>
               <li><a href="kantin.html">Kantin</a></li>
@@ -102,20 +282,50 @@
     <main>
       <section class="dashboard">
         <div class="judul_dashboard">
-          <h1>Dashboard</h1>
+          <h1>
+            <b>Dashboard</b>
+          </h1>
         </div>
         <div class="content_dashboard">
           <div class="dashboard_kiri">
             <a href="index.html">
-              <button>Log Out</button>
+              <button><i class="bi bi-door-closed"></i> &nbsp;&nbsp;Log Out</button>
             </a>
           </div>
           <div class="dashboard_tengah">
             <h2>My Account</h2>
-            <input type="text" placeholder="Dicker Hospital" disabled />
-            <input type="text" placeholder="dicker@hospital.com" disabled />
+            <span>Your Name</span><br />
+            <div class="name"><i class="bi bi-person-vcard"></i><input type="text" placeholder="Dicker Hospital" disabled /></div>
+            <span>Email Address</span> <br />
+            <div class="email"><i class="bi bi-envelope-at"></i><input type="text" placeholder="dicker@hospital.com" disabled /></div>
+            <span>Change Password</span> <br />
+            <div class="pass">
+              <button><i class="bi bi-key"></i>&nbsp;&nbsp;Change Password</button>
+            </div>
+            <div class="dua">
+              <div class="jk">
+                <span>Gender</span> <br />
+                <div class="jenis_kelamin">
+                  <i class="bi bi-gender-male"></i>
+                  <input type="text" placeholder="Laki-laki" disabled />
+                </div>
+              </div>
+              <div class="wa">
+                <span>Whatsapp/Phone</span> <br />
+                <div class="waphone">
+                  <i class="bi bi-whatsapp"></i>
+                  <input type="text" placeholder="+62 821-7872-8362" disabled />
+                </div>
+              </div>
+            </div>
+            <div class="savechange">
+              <button><i class="bi bi-check"></i>&nbsp;&nbsp;Save Changes</button>
+            </div>
           </div>
-          <div class="dashboard_kanan"></div>
+          <div class="dashboard_kanan">
+            <img src="assets/img/foto/avatar/avatar.png" alt="avatar" />
+            <button><i class="bi bi-cloud-arrow-up"></i>&nbsp;&nbsp;Upload Photo</button>
+          </div>
         </div>
       </section>
     </main>

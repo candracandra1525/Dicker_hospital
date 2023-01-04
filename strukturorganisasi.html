@@ -18,14 +18,17 @@
     <!-- Ini Link Icon Bootstrap -->
 
     <style>
-      main h1 {
-        margin-top: 150px;
+      .judulstruktur {
+        margin-top: 80px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url("https://img.freepik.com/premium-photo/long-hospital-corridor-with-empty-seats_117023-1679.jpg?w=2000");
+      }
+      .judulstruktur h1 {
         text-align: center;
-        margin-bottom: 30px;
-        /* border: 1px solid black; */
-        padding: 30px 0;
-        width: 100%;
-        background-color: #f9f9f9;
       }
 
       embed {
@@ -35,7 +38,6 @@
       }
 
       .pdf {
-        /* border: 1px solid black; */
         padding: 20px;
         max-width: 1500px;
         margin-left: auto;
@@ -43,6 +45,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     </style>
   </head>
@@ -81,12 +85,11 @@
               <li><a href="igd.html">IGD</a></li>
               <li><a href="rawatjalan.html">Rawat Jalan</a></li>
               <li><a href="rawatinap.html">Rawat Inap</a></li>
-              <li><a href="rumahduka.html">Rumah Duka</a></li>
               <li><a href="rumahsinggah.html">Rumah Singgah</a></li>
             </ul>
           </li>
           <li class="dropdown">
-            <a href="fasilitas/fasilitas.html">Fasilitas</a>
+            <a href="fasilitas.html">Fasilitas</a>
             <ul class="isi-dropdown" style="width: 200px">
               <li><a href="tempatibadah.html">Tempat Ibadah</a></li>
               <li><a href="kantin.html">Kantin</a></li>
@@ -130,17 +133,19 @@
 
     <!-- Main -->
     <main>
-      <h1>
-        <b>
-          STRUKTUR ORGANISASI
-          <br />
-          DICKER HOSPITAL
-        </b>
-      </h1>
+      <div class="judulstruktur">
+        <h1>
+          <b>
+            STRUKTUR ORGANISASI
+            <br />
+            DICKER HOSPITAL
+          </b>
+        </h1>
+      </div>
 
       <!--Sturktur Organisasi PDF-->
       <div class="pdf">
-        <embed src="assets/pdf/SOTK_RSMH_PALEMBANG.pdf" type="application/pdf" />
+        <embed src="assets/pdf/struktur_organisasi_dari_rsmh.pdf" type="application/pdf" />
       </div>
     </main>
     <!-- Main -->
