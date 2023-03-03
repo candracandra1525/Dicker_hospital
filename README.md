@@ -1,5 +1,5 @@
 ### DICKER HOSPITAL
-[DICKER HOSPITAL] (index.html)
+<a href = "index.html">[DICKER HOSPITAL]</a>
 
 Project Website Rumah Sakit sederhana</br>
 DI => Dhika</br>
