@@ -1,5 +1,5 @@
 ### DICKER HOSPITAL
-<a href = "index.html">[DICKER HOSPITAL]</a>
+<a href = "https://candracandra1525.github.io/Dicker_hospital/index_sesudahlogin.html">[DICKER HOSPITAL]</a>
 
 Project Website Rumah Sakit sederhana</br>
 DI => Dhika</br>
